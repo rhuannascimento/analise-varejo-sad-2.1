@@ -134,12 +134,12 @@ def main():
         / 100
     )
     elasticity = st.sidebar.slider(
-        "Insatisfação do Cliente (Elasticidade)",
+        "Coeficiente de elasticidade da demanda",
         0.0,
         1.0,
         0.0,
         0.01,
-        help="Define o quanto a demanda reage a mudanças na margem.",
+        help="Define o quanto a demanda reage a mudanças no preço do produto.",
     )
 
     df_base = simulate_baseline(df_products)
